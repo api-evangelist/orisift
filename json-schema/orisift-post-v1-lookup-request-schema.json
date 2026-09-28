@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/orisift/main/json-schema/orisift-post-v1-lookup-request-schema.json",
+  "title": "PostV1LookupRequest",
+  "x-generated": "2026-09-28",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/orisift-openapi-generated.yml#/components/schemas/PostV1LookupRequest",
+  "type": "object",
+  "properties": {
+    "phone_number": {
+      "type": "string",
+      "description": "The phone number to validate, e.g. +12125550142"
+    }
+  },
+  "required": [
+    "phone_number"
+  ]
+}

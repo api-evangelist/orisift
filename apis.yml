@@ -1,29 +1,122 @@
 aid: orisift
+
 name: Orisift
-description: 'Orisift is a company surfaced via the API Evangelist harvest backlog (source: new-submission)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://orisift.com/opengraph-image?0bbf128a9b71721e
+
+description: Orisift provides a unified validation API for phone numbers, email addresses, IP addresses, and domain information. The service offers
+  format checking, numbering plan verification, reserved and fictional range detection for phone numbers, as well as MX, Null MX, SPF, and DMARC
+  checks for email domains. It returns detailed evidence and risk signals, supporting agencies and developers in data quality and compliance workflows.
+  The platform delivers a single endpoint with credit‑based usage, allowing free trial credits and paid plans for higher volume.
+
 url: https://raw.githubusercontent.com/api-evangelist/orisift/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:new-submission
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-28 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-28'
+
 modified: '2026-09-28'
+
 tags:
 - Company
-apis: []
+- Validation
+- Phone
+- Email
+- IP
+- Domain
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Blog
+  url: https://orisift.com/blog/reserved-and-fictional-phone-ranges
+- type: Plans
+  url: plans/orisift-plans-pricing.yml
+- type: Spectral
+  url: rules/orisift-rules.yml
+- type: JSONLD
+  url: json-ld/orisift-context.jsonld
+- type: Vocabulary
+  url: vocabulary/orisift-vocabulary.yml
+- type: DataModel
+  url: data-model/orisift-data-model.yml
+- type: Conformance
+  url: conformance/orisift-conformance.yml
+- type: Hosts
+  url: hosts/orisift-hosts.yml
+- type: Vendors
+  url: vendors/orisift-vendors.yml
+- type: SDKs
+  url: packages/orisift-packages.yml
+- type: Packages
+  url: packages/orisift-packages.yml
+- type: DomainSecurity
+  url: security/orisift-domain-security.yml
 - type: Website
   url: https://orisift.com/
 - type: Documentation
   url: https://orisift.com/docs
-x-submission-notes: 'Developer API: one POST https://orisift.com/v1/lookup for phone (format, numbering
-  plan, reserved fiction ranges), email domain (MX, Null MX...) checks.'
+- type: APIReference
+  url: https://orisift.com/docs
+- type: GettingStarted
+  url: https://orisift.com/signup
+- type: GitHubOrganization
+  url: https://github.com/orisift
+- type: Pricing
+  url: https://orisift.com/pricing
+- type: SignUp
+  url: https://orisift.com/signup
+- type: TermsOfService
+  url: https://orisift.com/terms
+- type: PrivacyPolicy
+  url: https://orisift.com/privacy
+- type: Postman
+  url: https://www.postman.com/orisift/workspace
+
+apis:
+- aid: orisift:orisift-api
+  name: Orisift API
+  description: 'Orisift API as documented publicly: 1 operations. Contract generated from the documentation by API Evangelist (2026-09-28); not
+    the provider''s own document.'
+  humanURL: https://orisift.com/phone-number-validation-api
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/orisift-openapi-generated.yml
+    x-provenance: generated
+  - type: JSONSchema
+    url: json-schema/orisift-post-v1-lookup-response-schema.json
+  - type: JSONSchema
+    url: json-schema/orisift-post-v1-lookup-request-schema.json
+
+x-submission-notes: 'Developer API: one POST https://orisift.com/v1/lookup for phone (format, numbering plan, reserved fiction ranges), email
+  domain (MX, Null MX...) checks.'
+
 x-submission-probe: '2026-09-28: root 200, invented 404, docs 200'
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Documentation at https://orisift.com/docs is a JavaScript‑rendered single‑page app with no machine‑readable spec.
+  evidence:
+  - url: https://orisift.com/docs
+    status: 200
+  checked: '2026-09-28'
+
 x-submitted-by: orisift@gmail.com (apis.io/add, 2026-09-28)
+x-enrichment:
+  date: '2026-09-28'
+  status: enriched
+  artifacts_added: 16
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

@@ -1,0 +1,49 @@
+generated: '2026-09-28'
+method: searched
+source: https://orisift.com/privacy
+signals:
+  data_subject_request:
+    - url: https://orisift.com/privacy
+      section: "1. Who we are"
+      note: "States who is data controller and that users can request handling of their data."
+      evidence:
+        - source: https://orisift.com/privacy
+          http_status: 200
+          fetched: true
+          quote: "Tervra Limited is the data controller for your account data and can be reached at privacy@orisift.com. For identifiers you submit for validation, you are the controller and we act as your processor: we check what you send us, on your instruction, and return the result. For your own account data, such as your email address and billing details, we are the controller."
+  subprocessors:
+    - url: https://orisift.com/privacy
+      section: "4. Processors and international transfers"
+      note: "Lists subprocessors and transfer mechanisms."
+      evidence:
+        - source: https://orisift.com/privacy
+          http_status: 200
+          fetched: true
+          quote: "Processors and international transfers Public DNS resolvers: hostnames and IP addresses being checked are, necessarily, sent to public DNS resolvers as part of the lookup. Anthropic: when AI is allowed for your account and available, lookup evidence is sent to Anthropic for assessment. ... Stripe: payment processing. ... Some of these processors are located outside the UK and EEA. Transfers rely on the processor's own transfer mechanism, typically Standard Contractual Clauses."
+  ai_transparency:
+    - url: https://orisift.com/privacy
+      section: "3. What we never do"
+      note: "Denies use of data for AI training."
+      evidence:
+        - source: https://orisift.com/privacy
+          http_status: 200
+          fetched: true
+          quote: "We do not use your submitted identifiers to train any model."
+  data_retention:
+    - url: https://orisift.com/privacy
+      section: "5. Retention"
+      note: "Specifies retention period of lookup data."
+      evidence:
+        - source: https://orisift.com/privacy
+          http_status: 200
+          fetched: true
+          quote: "Scheduled daily cleanup targets lookups older than 90 days; deletion depends on that job running."
+  incident_notification:
+    - url: https://orisift.com/privacy
+      section: "3. What we never do"
+      note: "Implied security measures, but no explicit breach notification clause found."
+      evidence:
+        - source: https://orisift.com/privacy
+          http_status: 200
+          fetched: true
+          quote: "Our logger fingerprints identifiers and drops credentials entirely."

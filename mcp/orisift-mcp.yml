@@ -1,0 +1,7 @@
+generated: '2026-09-28'
+method: derived
+source: https://orisift.com/docs
+deployment:
+  mode: none
+  auth: unknown
+  verified: derived

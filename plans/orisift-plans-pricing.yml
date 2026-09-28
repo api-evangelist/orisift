@@ -1,0 +1,70 @@
+generated: '2026-09-28'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://orisift.com/pricing
+sources:
+- https://orisift.com/pricing
+name: Orisift pricing
+audience: business-product
+pricing_basis: flat-platform
+plans:
+- name: Free
+  price_text: 0 GBP · no subscription
+  price: 0
+  description: Free credits are granted once on signup; 500 credits on signup · 30 /min
+  features:
+  - 500 credits on signup
+  - 30 /min rate limit
+  - All four validation types
+  - Community support
+  limits:
+  - name: credits
+    limit_text: 500 credits on signup
+  - name: rate_limit
+    limit_text: 30 /min
+- name: Starter
+  price_text: £19 /month
+  price: 19
+  description: For agencies, freelancers and side projects.
+  features:
+  - 20,000 credits per month
+  - 120 /min rate limit
+  - Credits roll over for 90 days
+  - Multiple API keys
+  - Email support
+  limits:
+  - name: credits
+    limit_text: 20,000 credits per month
+  - name: rate_limit
+    limit_text: 120 /min
+- name: Growth
+  price_text: £49 /month
+  price: 49
+  description: For products gating real signup traffic.
+  features:
+  - 85,000 credits per month
+  - 600 /min rate limit
+  - Credits roll over for 90 days
+  - Higher rate limits
+  - Priority email support
+  limits:
+  - name: credits
+    limit_text: 85,000 credits per month
+  - name: rate_limit
+    limit_text: 600 /min
+- name: Professional
+  price_text: £149 /month
+  price: 149
+  description: For high-volume applications and platforms.
+  features:
+  - 300,000 credits per month
+  - 1500 /min rate limit
+  - Credits roll over for 90 days
+  - Highest rate limits
+  - Priority support with a technical call
+  limits:
+  - name: credits
+    limit_text: 300,000 credits per month
+  - name: rate_limit
+    limit_text: 1500 /min
+docs: https://orisift.com/pricing

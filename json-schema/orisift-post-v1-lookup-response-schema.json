@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/orisift/main/json-schema/orisift-post-v1-lookup-response-schema.json",
+  "title": "PostV1LookupResponse",
+  "x-generated": "2026-09-28",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/orisift-openapi-generated.yml#/components/schemas/PostV1LookupResponse",
+  "type": "object",
+  "properties": {
+    "verdict": {
+      "type": "string",
+      "description": "Decision about the number, e.g. rejected"
+    },
+    "risk_score": {
+      "type": "integer",
+      "description": "Risk score associated with the number"
+    },
+    "evidence_coverage": {
+      "type": "integer",
+      "description": "Percentage of evidence coverage"
+    },
+    "credits": {
+      "type": "integer",
+      "description": "Credits consumed for the lookup"
+    },
+    "recommendation": {
+      "type": "string",
+      "description": "Suggested action for the caller"
+    },
+    "capability": {
+      "type": "string",
+      "description": "Capability state, e.g. VERIFIED"
+    },
+    "state": {
+      "type": "string",
+      "description": "State of the validation, e.g. Format VERIFIED"
+    },
+    "format": {
+      "type": "string",
+      "description": "Result of format parsing"
+    },
+    "plan_validity": {
+      "type": "string",
+      "description": "Validity of the numbering plan"
+    },
+    "carrier": {
+      "type": "string",
+      "description": "Carrier information (if available)"
+    },
+    "reachability": {
+      "type": "string",
+      "description": "Reachability status (if available)"
+    },
+    "source": {
+      "type": "string",
+      "description": "Source of the evidence, e.g. National regulator allocations"
+    },
+    "line_type": {
+      "type": "string",
+      "description": "Type of line (fixed line or mobile) derived from the numbering plan"
+    }
+  }
+}

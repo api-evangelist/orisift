@@ -85,20 +85,19 @@ common:
   url: https://www.postman.com/orisift/workspace
 
 apis:
-- aid: orisift:orisift-api
-  name: Orisift API
-  description: 'Orisift API as documented publicly: 1 operations. Contract generated from the documentation by API Evangelist (2026-09-28); not
-    the provider''s own document.'
+- aid: orisift:orisift-lookup-api
+  name: Orisift Lookup API
+  description: The Lookup API from Orisift — 1 operation(s) for lookup.
   humanURL: https://orisift.com/phone-number-validation-api
+  tags:
+  - Lookup
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/orisift-openapi-generated.yml
-    x-provenance: generated
+    url: openapi/orisift-lookup-api-openapi.yml
   - type: JSONSchema
     url: json-schema/orisift-post-v1-lookup-response-schema.json
   - type: JSONSchema
     url: json-schema/orisift-post-v1-lookup-request-schema.json
-
 x-submission-notes: 'Developer API: one POST https://orisift.com/v1/lookup for phone (format, numbering plan, reserved fiction ranges), email
   domain (MX, Null MX...) checks.'
 

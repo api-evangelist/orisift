@@ -47,6 +47,14 @@ paths:
         kind: documentation
 components:
   schemas:
+    PostV1LookupRequest:
+      type: object
+      properties:
+        phone_number:
+          type: string
+          description: The phone number to validate, e.g. +12125550142
+      required:
+      - phone_number
     PostV1LookupResponse:
       type: object
       properties:
@@ -89,14 +97,6 @@ components:
         line_type:
           type: string
           description: Type of line (fixed line or mobile) derived from the numbering plan
-    PostV1LookupRequest:
-      type: object
-      properties:
-        phone_number:
-          type: string
-          description: The phone number to validate, e.g. +12125550142
-      required:
-      - phone_number
   securitySchemes:
     bearer:
       type: http

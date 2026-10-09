@@ -68,3 +68,35 @@ plans:
   - name: rate_limit
     limit_text: 1500 /min
 docs: https://orisift.com/pricing
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - free
+  - subscription
+  units: []
+  plans:
+  - name: Free
+    access: other
+    model: free
+    model_how: derived
+    units: []
+    periods: []
+  - name: Starter
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Growth
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Professional
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []

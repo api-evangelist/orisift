@@ -64,5 +64,117 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Orisift is a company surfaced via the API Evangelist harvest backlog (source: new-submission) and added to the network as a stub for full-pipeline profiling.
-- https://orisift.com/
+Orisift provides a unified validation API for phone numbers, email addresses, IP addresses, and domain information. The service offers format checking, numbering plan verification, reserved and fictional range detection for phone numbers, as well as MX, Null MX, SPF, and DMARC checks for email domains. It returns detailed evidence and risk signals, supporting agencies and developers in data quality and compliance workflows. The platform delivers a single endpoint with credit‑based usage, allowing free trial credits and paid plans for higher volume.
+
+**Areas:** Company · Validation · Phone · Email · IP · Domain
+
+## Orisift on APIs.io
+
+Everything profiled for Orisift is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/orisift/](https://apis.io/providers/orisift/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Orisift Lookup API](https://apis.io/apis/orisift/orisift-lookup-api/) — The Lookup API from Orisift — 1 operation(s) for lookup.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### JSON Schema (2)
+
+The data models the API reads and writes.
+
+- [PostV1LookupRequest](https://apis.io/schemas/orisift/orisift-post-v1-lookup-request/)
+- [PostV1LookupResponse](https://apis.io/schemas/orisift/orisift-post-v1-lookup-response/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Orisift Context](https://apis.io/jsonld/orisift/orisift-context/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Orisift API Rules](https://apis.io/rules/orisift/orisift-rules/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Orisift Domain Security](https://apis.io/security/orisift/orisift-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Orisift Plans Pricing](https://apis.io/plans/orisift/orisift-plans-pricing/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://orisift.com/)
+- [Documentation](https://orisift.com/docs)
+- [Getting started](https://orisift.com/signup)
+- [API reference](https://orisift.com/docs)
+- [Pricing](https://orisift.com/pricing)
+- [Sign up](https://orisift.com/signup)
+- [Blog](https://orisift.com/blog/reserved-and-fictional-phone-ranges)
+- [Terms of service](https://orisift.com/terms)
+- [Privacy policy](https://orisift.com/privacy)
+- [GitHub](https://github.com/orisift)
+
+## API Evangelist rating
+
+**Kin Score 38.2** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 22.1 |
+| Contract governance | 22.0 |
+| Operational transparency | 5.3 |
+| Developer ergonomics | 42.9 |
+| Access clarity | 76.3 |
+
+**Agent readiness 15.5** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 18.6** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/orisift/](https://apis.io/providers/orisift/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Orisift: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/orisift/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
